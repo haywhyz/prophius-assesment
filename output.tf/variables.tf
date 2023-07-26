@@ -5,13 +5,7 @@ variable "region" {
   default = "eu-west-1"
 }
 
-variable "aws_access_key_id" {
-  default = "AKIASNWYWY2Q4QOLUJKX"
-}
 
-variable "aws_secret_access_key" {
-  default = "DS+x2xEjLdf8Ns3pzgwF1OM/WHozvxjhhwU2IDM2"
-}
 
 // ECR
 variable "repository_name" {
