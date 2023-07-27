@@ -1,12 +1,13 @@
 
 # AWS EKS Output
+
 output "cluster_name" {
   description = "Amazon Web Service EKS Cluster Name"
   value       = module.eks.cluster_name
 }
 
 
-# AWS VPC Output
+# VPC Output
 
 output "azs" {
   value = module.vpc.azs
@@ -55,17 +56,6 @@ output "public_route_table_ids" {
 
 # AWS RDS Output
 
-/* output "name" {
-  value = module.db.name
-}
-
-output "username" {
-  value = module.db.username
-}
-
-output "identifier" {
-  value = module.db.identifier
-} */
 
 
 #aws ECR Output
