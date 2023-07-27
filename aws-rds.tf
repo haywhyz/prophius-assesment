@@ -1,6 +1,4 @@
-##############################################################
-# Data sources to get VPC, subnets and security group details
-##############################################################
+// RDS MODULE
 
 resource "aws_security_group" "sec_grp_rds" {
 
@@ -26,10 +24,11 @@ module "db" {
   instance_class    = var.rds_instance_class
   allocated_storage = 5
 
-  name     = var.rds_name
-  username = var.db_uername
-  port     = var.db_port
-  password = var.db_password
+
+  db_name     = var.rds_name
+  username = var.rds_username
+  port     = var.rds_port
+  password = var.rds_password
 
   iam_database_authentication_enabled = true
 
@@ -48,3 +47,4 @@ module "db" {
   deletion_protection = true
 
 }
+
